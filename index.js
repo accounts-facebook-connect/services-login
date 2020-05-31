@@ -1,0 +1,2 @@
+//alert msg
+alert("Ok!");
