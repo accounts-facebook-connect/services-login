@@ -12,17 +12,47 @@
       <!-- Contenido de la caja -->
       <div style="margin: 0 auto; padding-top: 13px; width: 980px; font-family: inherit">
         <!-- Lugar de icono de facebook -->
-        <div style="font-family: inherit;">
+        <div style="font-family: inherit; display: inline-block;">
           <h1 style="margin: 0px;">
-            <a href="" title="Comprobar el inicio de sesión"><i style="background-image: url(facebook-logo-transparente.png); margin-top: 7px; width: 183px; height: 50px; display: inline-block;"></i></a>
+            <a href="" title="Comprobar el inicio de sesión"><i style="background-image: url(facebook-logo-transparente.png); background-repeat: no-repeat; margin-top: 15px; margin-top: 7px; width: 183px; height: 50px; display: inline-block;"></i></a>
           </h1>
         </div>
+        
         <!-- Campos para el correo y la contraseña -->
         <div style="float: right;display: inline-block;">  
-          <div style="display: inline-block;">
-            <p style="display: inline-block;">Correo electrónico o teléfono</p>
-            <p style="display: inline-block;">Contraseña</p>
-           </div>
+          <table>
+  <tbody>
+  <!-- primera fila -->
+  <tr>
+    <td style="padding-bottom: 4px; padding: 0 0 0 14px;color: white;">
+      <label for="email">Correo electrónico o teléfono</label>
+    </td>
+    <td style="padding-bottom: 4px; padding: 0 0 0 14px;color: white;">
+      <label for="pass">Contraseña</label>
+    </td>
+  </tr>
+  <!-- segunda fila -->
+  <tr>
+    <td style="padding-bottom: 4px; padding: 0 0 0 14px;">
+      <input id="email" type="email" style="direction: ltr; border-color: #1d2a5b; width: 142px; padding-bottom: 4px; border: 1px solid #ccd0d5; padding: 3px; border-color: #1d2a5b;">
+
+    </td>
+    <td style="padding-bottom: 4px; padding: 0 0 0 14px;">
+      <input id="email" type="password" style="direction: ltr; border-color: #1d2a5b; width: 142px; padding-bottom: 4px; border: 1px solid #ccd0d5; padding: 3px; border-color: #1d2a5b;">
+
+    </td>
+    <td>
+      <label id="login" for="btn-login" style="direction: ltr; border-color: #1d2a5b; width: 142px; padding-bottom: 4px; border: 1px solid #ccd0d5; padding: 3px; border-color: #1d2a5b; border-radius: 2px; cursor: pointer; display: inline-block; font-size: 12px; font-weight: bold; line-height: 18px; padding: 2px 6px; text-align: center; text-decoration: none; text-shadow: none; vertical-align: top; white-space: nowrap;">
+      </label>
+  </td>
+  </tr>
+  <!-- tercera fila -->
+  <tr>
+    <td style="padding-bottom: 4px; padding: 0 0 0 14px;">
+    </td>
+  </tr>
+    
+  </tbody></table>
         </div>
       </div>
      <!-- ################################## -->
