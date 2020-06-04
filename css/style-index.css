@@ -1,3 +1,7 @@
 input:hover {
   text-decoration: none;
 }
+
+h1:hover {
+  color: green;
+}
