@@ -1,7 +1,12 @@
+a {
+  color: aqua;
+}
+a:hover {
+  color: green;
+}
 input:hover {
   text-decoration: none;
 }
-
 h1:hover {
   color: green;
 }
