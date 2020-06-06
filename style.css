@@ -1,13 +1,4 @@
-a {
-  color: aqua;
-}
-a:hover {
-  color: green;
-}
-input:active {
-  text-decoration: none;
-  color: -internal-light-dark-color(black, white);
-}
-h1:hover {
-  color: green;
+#input:focus {
+	outline-offset: 0px;
+	outline-style: none;
 }
