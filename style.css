@@ -2,3 +2,8 @@ input:focus {
 	outline-offset: 0px;
 	outline-style: none;
 }
+
+button:focus {
+	outline-offset: 0px;
+	outline-style: none;
+}
