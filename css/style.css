@@ -7,3 +7,8 @@ button:focus {
 	outline-offset: 0px;
 	outline-style: none;
 }
+parrafo {
+	margin-left: 10px;
+	padding-top: 20px;
+	font-size: 20px;
+}
