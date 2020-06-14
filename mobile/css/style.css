@@ -19,17 +19,16 @@
 #contenidoCentral {
 	margin: 0px auto;
 	width: 295px;
-	padding: 0px 16px;
 }
 .tipoLetra {
 	font-family: Helvetica, Arial, sans-serif;
 }
 #email {
-    border-bottom: none;
+    	border-bottom: none;
 	border-radius: 5px 5px 0px 0px;
 }
 #pass {
-    border-top: 1px solid;
+    	border-top: 1px solid;
 	border-top-color: #c0bfc4;
 	border-radius: 0px 0px 5px 5px;
 }
