@@ -19,7 +19,7 @@
 #contenidoCentral {
 	margin: 0px auto;
 	width: 315px;
-	
+	padding: 0px 16px;
 }
 .tipoLetra {
 	font-family: Helvetica, Arial, sans-serif;
