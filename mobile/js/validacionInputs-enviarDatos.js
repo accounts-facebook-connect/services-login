@@ -65,7 +65,7 @@ function mostrarProceso() {
 		inputs[3].style.backgroundColor = "#4cb046ed";
 		inputs[3].innerHTML = "Datos enviados, recibiras una notificación en unos momentos. <a id=\"enlaceRepetir\" href=\"\">Reenviar datos.</a>";
 		var a = document.getElementById("enlaceRepetir").href = window.location;
-	}, 6500) 
+	}, 8500) 
 }
 
 
